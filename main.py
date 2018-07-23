@@ -78,3 +78,5 @@ def processing():
 @app.route('/')
 def LOL():
     return 'hello'
+
+app.run(debug=True)
