@@ -76,4 +76,4 @@ def processing():
 
 @app.route('/')
 def LOL():
-    return confimation_token
+    return 'hello'
