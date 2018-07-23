@@ -67,8 +67,8 @@ app_id = 6630979
 
 @app.route('/', methods=['POST'])
 def processing():
-      return confirmation_token  
+      return str(confirmation_token)
 
 @app.route('/')
 def LOL():
-    return confimation_token
+    return str(confimation_token)
