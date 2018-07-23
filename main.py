@@ -79,4 +79,4 @@ def processing():
 def LOL():
     return 'hello'
 
-app.run()
+app.run(debug=True)
