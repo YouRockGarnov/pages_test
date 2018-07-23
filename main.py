@@ -50,6 +50,15 @@ app_id = 6630979
 
 @app.route('/', methods=['POST'])
 def processing():
+    session = vk.Session()
+    api = vk.API(session, v=5.0)
+    api.send_message(481116745, token, 'Это я')
+    return 'ok'
+    
+    
+    user_id = data['object']['user_id']
+    message = data['object']['title']
+        
         #Распаковываем json из пришедшего POST-запроса
     data = json.loads(request.data)
     #Вконтакте в своих запросах всегда отправляет поле типа
