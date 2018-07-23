@@ -76,6 +76,6 @@ def processing():
         # Сообщение о том, что обработка прошла успешно
         return 'ok'
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def LOL():
     return confimation_token
